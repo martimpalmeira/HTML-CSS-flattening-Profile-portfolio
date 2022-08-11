@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------  HEADER  -------------------*/
+
+.menu-container {
+    background-color: #2C3E50;
+    text-transform: uppercase;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+.menu-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.menu-main a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-title{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0 5px 0;
+}
+
+.menu-links{
+    display: flex;
+    
+}
+
+.menu-links li{
+    list-style: none;
+    font-size: 14px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+/*----------------  ABOUT  -------------------*/
+
+#about{
+    background-color: #1ABC9C;
+    text-align: center;
+    padding: 100px 0 64px 0;
+    width: 100%;
+
+}
+
+#about img{
+    width: 150px;
+    margin: 67px 85px 37px 85px;
+}
+
+#about h1,p{
+    color: white;
+}
+
+#about h1{
+    font-size: 32px;
+    font-weight: 700;
+   
+}
+
+#about p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*----------------  PORTFOLIO  -------------------*/
+
+#portfolio h2{
+    text-transform: uppercase;
+    color: #2C3E50;
+    font-size: 32px;
+    text-align: center;
+    margin: 60px auto 8px auto;
+}
+
+.portfolio-container img{
+    width: calc(100% - 20px);
+    max-width: 420px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+
+/*----------------  CONTACT  -------------------*/
+
+#contact{
+    background-color: #2C3E50;
+    height: 120px;
+    text-align: center;
+    color: white;
+}
+
+#contact p{
+   padding-top: 29px;
+   
+}
+
+.images-container{
+    display: flex;
+    justify-content: center;
+}
+
+.images-container img{
+    margin: 10px;
+    
+}
+
+
+/*----------------  MEDIA QUERIES SCREEN  -------------------*/
+
+@media screen and (min-width: 576px){
+    #about h1{
+        font-size: 40px;
+    }
+
+    #about p{
+        font-size: 20px;
+    }
+
+    #portfolio h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .menu-title{
+        font-size: 30px;
+    }
+
+    .menu-links li{
+        font-size: 18px;
+    }
+
+    .menu-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .menu-container .menu-title{
+        margin: 0;
+    }
+
+    .menu-main{
+        flex-direction: row;
+        justify-content: space-between;
+        width:calc(100% - 40px);
+        max-width: 992px;
+    }
+
+    #about h1{
+        font-size: 48px;
+    }
+
+    #about p{
+        font-size: 24px;
+    }
+
+    #portfolio h2{
+        font-size: 48px;
+    }
+
+    .portfolio-container{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    .portfolio-container img{
+        width: 280px;
+        height: 200px;
+    }
+
+    
+
+}
